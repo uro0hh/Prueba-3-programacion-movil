@@ -1,0 +1,28 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>actividades</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="example-content">Proximamente</div>
+</ion-content>
+
+<ion-tab-bar slot="bottom">
+  <ion-tab-button >
+    <ion-icon name="home" (click)="menuPrincipal()"></ion-icon>
+    Inicio
+  </ion-tab-button>
+  <ion-tab-button>
+    <ion-icon name="barbell" (click)="menuHabitos()"></ion-icon>
+    Habitos
+  </ion-tab-button>
+  <ion-tab-button>
+    <ion-icon name="library" (click)="menuActividad()"></ion-icon>
+    Actividad
+  </ion-tab-button>
+  <ion-tab-button>
+    <ion-icon name="exit" (click)="cerrarSesion()"></ion-icon>
+    Cerrar sesion
+  </ion-tab-button>
+</ion-tab-bar>

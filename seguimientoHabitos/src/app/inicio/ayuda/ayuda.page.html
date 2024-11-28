@@ -1,0 +1,54 @@
+<!-- src/app/feedback/feedback.page.html -->
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Sugerencias</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-item>
+    <ion-label position="stacked">Nombre</ion-label>
+    <ion-input [(ngModel)]="name" placeholder="Ingresa tu nombre"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label position="stacked">Email</ion-label>
+    <ion-input [(ngModel)]="email" placeholder="Ingresa tu correo electrónico"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label position="stacked">Mensaje</ion-label>
+    <ion-textarea [(ngModel)]="message" placeholder="Escribe tu sugerencia"></ion-textarea>
+  </ion-item>
+
+  <ion-button expand="full" (click)="enviarSugerencia()">Enviar Sugerencia</ion-button>
+</ion-content>
+
+<ion-tab-bar slot="bottom">
+  
+  <ion-tab-button >
+    <ion-icon name="home" (click)="menuPrincipal()"></ion-icon>
+    Inicio
+  </ion-tab-button>
+
+
+  <ion-tab-button>
+    <ion-icon name="barbell" (click)="menuHabitos()"></ion-icon>
+    Habitos
+  </ion-tab-button>
+
+  
+  <ion-tab-button>
+    <ion-icon name="create-outline" (click)="menuActividad()"></ion-icon>
+    Sugerencias
+  </ion-tab-button>
+
+
+  <ion-tab-button>
+    <ion-icon name="exit" (click)="cerrarSesion()"></ion-icon>
+    Cerrar sesion
+  </ion-tab-button>
+
+
+</ion-tab-bar>
+

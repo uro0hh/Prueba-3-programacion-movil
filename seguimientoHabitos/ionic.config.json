@@ -1,0 +1,7 @@
+{
+  "name": "seguimientoHabitos",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
